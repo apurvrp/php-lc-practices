@@ -1,5 +1,16 @@
 <?php
 
+// echo '<pre />';
+// print_r($_SERVER);
+// echo '<br />';
+
+// echo  $_SERVER;
+
+// echo '<br />';
+// echo "var_dump";
+// echo '<br />';
+// var_dump($_SERVER);
+
 $name = "Tom";
 $read = true;
 if ($read) {
