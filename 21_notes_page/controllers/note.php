@@ -1,6 +1,8 @@
 <?php
 
 $config = require('config.php');
+require 'Database.php';
+
 $db = new Database($config['database']);
 
 $heading = 'Note';
