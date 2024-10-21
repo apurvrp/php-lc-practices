@@ -17,3 +17,4 @@
 - [27_form_validation](https://github.com/apurvrp/php-lc-practices/tree/dec5bccd4a61a6412479f3598fc91e8e9682e7d0/27_form_validation)
 - [28_validator_class](https://github.com/apurvrp/php-lc-practices/tree/6e9a9e639c64bf2116dc524be84ccf06dfad3241/28_validator_class)
 - [29_resource_name_conventions](https://github.com/apurvrp/php-lc-practices/tree/b366da7193527c70d87eb5270e0639fdfe1c5bfb/29_resource_name_conventions)
+- [30_autoloading-extraction](https://github.com/apurvrp/php-lc-practices/tree//30_autoloading-extraction)
