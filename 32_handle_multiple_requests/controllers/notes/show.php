@@ -3,28 +3,32 @@
 use Core\Database;
 
 $config = require base_path('config.php');
-// require 'Database.php';
 $db = new Database($config['database']);
 
-$heading = 'Note';
-$currentUserId = 1;
+$currentUserId = 25;
 
-$note = $db->query('select * from notes where id = :id', [
-    'id' => $_GET['id']
-// ])->fetch();
-])->findOrFail();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $note = $db->query('select * from notes where id = :id', [
+        'id' => $_GET['id']
+    ])->findOrFail();
 
-// if (! $note) {
-//     abort();
-// }
-// if ($note['user_id'] !== $currentUserId) {
-//     abort(Response::FORBIDDEN);
-// }
+    authorize($note['user_id'] === $currentUserId);
 
-authorize($note['user_id'] === $currentUserId);
+    $db->query('delete from notes where id = :id', [
+        'id' => $_GET['id']
+    ]);
 
-// require "views/notes/show.view.php";
-view("notes/show.view.php", [
-    'heading' => 'Note',
-    'note' => $note
-]);
+    header('location: /notes');
+    exit();
+} else {
+    $note = $db->query('select * from notes where id = :id', [
+        'id' => $_GET['id']
+    ])->findOrFail();
+
+    authorize($note['user_id'] === $currentUserId);
+
+    view("notes/show.view.php", [
+        'heading' => 'Note',
+        'note' => $note
+    ]);
+}

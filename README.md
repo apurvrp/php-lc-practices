@@ -19,3 +19,4 @@
 - [29_resource_name_conventions](https://github.com/apurvrp/php-lc-practices/tree/b366da7193527c70d87eb5270e0639fdfe1c5bfb/29_resource_name_conventions)
 - [30_autoloading-extraction](https://github.com/apurvrp/php-lc-practices/tree//30_autoloading-extraction)
 - [31_namespaces](https://github.com/apurvrp/php-lc-practices/tree/f7f921ed1dd7867e39742e243ac9a72592b66d61/31_namespaces)
+- []()
