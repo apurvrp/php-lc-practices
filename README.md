@@ -13,3 +13,4 @@
 - [22_23_authorization](https://github.com/apurvrp/php-lc-practices/tree/30e24251411a2b31d974c50924d7a9cd80836419/22_23_authorization)
 - [24_code_rewriting](https://github.com/apurvrp/php-lc-practices/tree/0b0b42d2c39554a4f9862b9ea7c8670e5286f5ef/24_code_rewriting)
 - [25_form_request](https://github.com/apurvrp/php-lc-practices/tree/c37ad0963acef7ab91ed218aaed121fe1820350d/25_form_request)
+- [26_form_request_checking](https://github.com/apurvrp/php-lc-practices/tree/21eee963578b4a5b33605b75378ecb39693afa4b/26_form_request_checking)
