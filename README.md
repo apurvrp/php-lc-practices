@@ -20,3 +20,4 @@
 - [30_autoloading-extraction](https://github.com/apurvrp/php-lc-practices/tree//30_autoloading-extraction)
 - [31_namespaces](https://github.com/apurvrp/php-lc-practices/tree/f7f921ed1dd7867e39742e243ac9a72592b66d61/31_namespaces)
 - [32_handle_multiple_requests](https://github.com/apurvrp/php-lc-practices/tree/5a6d211cc384acd2d6909e2b975167cf2285d42b/32_handle_multiple_requests)
+- [33_build_better_router](https://github.com/apurvrp/php-lc-practices/tree/16ea60266da7a6e7c8c29854c40b61c4edc50737/33_build_better_router)
