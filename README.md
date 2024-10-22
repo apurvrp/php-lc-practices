@@ -26,3 +26,5 @@
 - [36_create_patch_request](https://github.com/apurvrp/php-lc-practices/tree/ab8f5a3595c8b06073ace40b9643cdc7ef382e90/36_create_patch_request)
 - [37_38_session_registration_form](https://github.com/apurvrp/php-lc-practices/tree/b2bb85689ca336079e4aa879bbfc25a649a480d2/37_38_session_registration_form)
 - [39_middleware_concepts](https://github.com/apurvrp/php-lc-practices/tree/56c80f703dae6a9638be3b5cc617c1bedee82a18/39_middleware_concepts)
+- [39_middleware_concepts](https://github.com/apurvrp/php-lc-practices/tree/56c80f703dae6a9638be3b5cc617c1bedee82a18/39_middleware_concepts)
+- [40_manage_password](https://github.com/apurvrp/php-lc-practices/tree/39c0cf181d37d68f0faa3a5194fb60900e5a7f60/40_manage_password)
