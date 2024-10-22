@@ -24,3 +24,4 @@
 - [34_one_request_one_controller](https://github.com/apurvrp/php-lc-practices/tree/12ed8a8846596b3b6f69bfa7b0d6616b0647ac9c/34_one_request_one_controller)
 - [35_create_service_container](https://github.com/apurvrp/php-lc-practices/tree/0c359f56f6a33905986eff252b95007a8d6ff8fe/35_create_service_container)
 - [36_create_patch_request](https://github.com/apurvrp/php-lc-practices/tree/ab8f5a3595c8b06073ace40b9643cdc7ef382e90/36_create_patch_request)
+- [37_38_session_registration_form](https://github.com/apurvrp/php-lc-practices/tree/a5634f5131de96ba7703fdaed069d5ca58541bc6/37_38_session_registration_form)
