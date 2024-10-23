@@ -1,0 +1,16 @@
+{
+  "name": "apurv-prajapati/composer-autoloading",
+  "authors": [
+    {
+      "name": "Apurv Prajapati",
+      "email": "apurv.prajapati27@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Http/"
+    }
+  }
+}
