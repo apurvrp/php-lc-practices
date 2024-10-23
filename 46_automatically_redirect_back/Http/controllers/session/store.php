@@ -13,7 +13,6 @@ $signedIn = (new Authenticator)->attempt(
 );
 
 if (!$signedIn) {
-    dd($form);
     $form->error(
         'email', 'No matching account found for that email address and password.'
     )->throw();
