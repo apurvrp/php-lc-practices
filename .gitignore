@@ -1,0 +1,27 @@
+# Ignore PHPStorm project files
+/.idea/
+
+# Ignore VS Code project files
+.vscode/
+
+# Ignore Composer's vendor directory
+/vendor/
+47_composer_autoloading/vendor/
+
+# Ignore Composer lock file
+composer.lock
+47_composer_autoloading/composer.lock
+
+# Ignore environment configuration files
+.env
+
+# Ignore node_modules in case of frontend dependencies
+/node_modules/
+
+# Ignore Laravel log and cache files
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+
+
