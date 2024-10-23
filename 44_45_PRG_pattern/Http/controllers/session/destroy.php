@@ -1,6 +1,8 @@
 <?php
 
-logout();
+use Core\Session;
+
+Session::destroy();
 
 header('location: /');
 exit();
