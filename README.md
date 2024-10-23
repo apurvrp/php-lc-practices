@@ -31,3 +31,4 @@
 - [41_login_logout](https://github.com/apurvrp/php-lc-practices/tree/29ad6e9ee91fd61acbff0f56bab80415e88aabc9/41_login_logout)
 - [42_43_extract_form_validation](https://github.com/apurvrp/php-lc-practices/tree/bad254520a869e408e128670896c9015fb2ad677/42_43_extract_form_validation)
 - [44_45_PRG_pattern](https://github.com/apurvrp/php-lc-practices/tree/2807f82a2cd8d025e70313cdd40e5393fdf744e0/44_45_PRG_pattern)
+- [46_automatically_redirect_back](https://github.com/apurvrp/php-lc-practices/tree/dba73cc63474a280ec74c21c8ca5cf5317990f9a/46_automatically_redirect_back)
