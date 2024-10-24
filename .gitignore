@@ -8,12 +8,14 @@
 /vendor/
 47_composer_autoloading/vendor/
 48_composer_packages_install/vendor/
+49_testing_approches/vendor
 
 # Ignore Composer lock file
 
 composer.lock
 47_composer_autoloading/composer.lock
 48_composer_packages_install/composer.lock
+49_testing_approches/composer.lock
 
 # Ignore environment configuration files
 .env
