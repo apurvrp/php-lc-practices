@@ -2,7 +2,7 @@
 
 ---
 
-Here is an advanced set of PHP interview questions tailored for someone with 9+ years of experience, along with detailed answers and practical examples:
+Here is an advanced set of **PHP interview questions** tailored for someone with 9+ years of experience, along with detailed answers and practical examples:
 
 ---
 
