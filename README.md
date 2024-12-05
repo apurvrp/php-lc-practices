@@ -35,3 +35,4 @@
 - [47_composer_autoloading](https://github.com/apurvrp/php-lc-practices/tree/21a0bf35e694e88e1187b3e8ea0178a9988a9b41/47_composer_autoloading)
 - [48_composer_packages_install](https://github.com/apurvrp/php-lc-practices/tree/97fb426997abc352938cfa1ba4a30cdfe60fb708/48_composer_packages_install)
 - [49_testing_approches](https://github.com/apurvrp/php-lc-practices/tree/8e07c6099d8c534eeac688eab6885271ea3d8fb8/49_testing_approches)
+- [50_interview_stuff](https://github.com/apurvrp/php-lc-practices/tree/)
