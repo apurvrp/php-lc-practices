@@ -1,5 +1,7 @@
 ### **OOP (Object-Oriented Programming) Concepts in PHP**
 
+---
+
 Object-Oriented Programming (OOP) is a programming paradigm based on the concept of **objects**, which are instances of **classes**. PHP supports OOP, and it's widely used for building scalable, reusable, and maintainable applications.
 
 In OOP, we use classes to define objects and group related data and functions together. Here are the key OOP concepts in PHP:
@@ -230,3 +232,131 @@ unset($car);  // Output: Car model: Tesla is destroyed.
 | **Destructor**    | A special method that is called when an object is destroyed.         | `public function __destruct() {}`  |
 
 OOP in PHP helps in building **modular**, **maintainable**, and **scalable** applications. By using these concepts, you can organize and structure your code more effectively.
+
+---
+
+### **Abstraction in PHP**
+
+---
+
+**Abstraction** is one of the key concepts in Object-Oriented Programming (OOP). It involves hiding the complex implementation details and showing only the essential features of an object or class. The idea is to provide a simple interface for interacting with complex systems, so the user doesn't need to worry about the internal workings.
+
+In PHP, abstraction is achieved using **abstract classes** and **abstract methods**. An **abstract class** is a class that cannot be instantiated directly and can have **abstract methods** (methods without a body) that must be implemented by any subclass.
+
+---
+
+### **What is an Abstract Class?**
+
+An **abstract class** is a class that cannot be instantiated (i.e., you can't create an object of an abstract class directly). It can contain both **abstract methods** (without implementation) and **non-abstract methods** (with implementation). Abstract classes are used to define a common interface for all derived classes, while leaving the implementation of some methods to the subclasses.
+
+#### **Purpose of Abstract Classes:**
+
+- To provide a common interface and partial implementation for subclasses.
+- To prevent direct instantiation of a base class that doesn’t make sense by itself.
+
+---
+
+### **What is an Abstract Method?**
+
+An **abstract method** is a method that is declared in an abstract class but does not have any implementation. The purpose of an abstract method is to force any non-abstract subclass to implement that method.
+
+#### **Purpose of Abstract Methods:**
+
+- To define a contract that subclasses must follow.
+- To ensure that subclasses implement their own version of the method.
+
+---
+
+### **Practical Example: Abstract Class and Abstract Method**
+
+Let’s consider a scenario where you need to represent different types of **vehicles**. All vehicles can **move**, but the exact way they move can differ (e.g., a car moves differently from a boat). Instead of providing a full implementation in a base class, we can define an abstract method for moving and leave the implementation to the subclasses.
+
+```php
+<?php
+// Abstract class Vehicle
+abstract class Vehicle {
+    // Abstract method (must be implemented in any derived class)
+    abstract public function move();
+
+    // Non-abstract method with implementation
+    public function stop() {
+        return "The vehicle has stopped.";
+    }
+}
+
+// Subclass Car that extends the Vehicle class
+class Car extends Vehicle {
+    // Implement the abstract method
+    public function move() {
+        return "The car drives on the road.";
+    }
+}
+
+// Subclass Boat that extends the Vehicle class
+class Boat extends Vehicle {
+    // Implement the abstract method
+    public function move() {
+        return "The boat sails on the water.";
+    }
+}
+
+// Trying to create an object of the abstract class will result in an error
+// $vehicle = new Vehicle(); // Error: Cannot instantiate abstract class
+
+// Correctly create objects of the subclasses
+$car = new Car();
+echo $car->move(); // Output: The car drives on the road.
+echo "<br>";
+echo $car->stop(); // Output: The vehicle has stopped.
+echo "<br>";
+
+$boat = new Boat();
+echo $boat->move(); // Output: The boat sails on the water.
+echo "<br>";
+echo $boat->stop(); // Output: The vehicle has stopped.
+?>
+```
+
+### **Explanation of the Example:**
+
+1. **Abstract Class `Vehicle`:**
+
+   - It has an **abstract method** `move()`. This method has no body in the abstract class, forcing the subclasses to implement it.
+   - It also has a **non-abstract method** `stop()`, which has a defined behavior and can be inherited directly by subclasses.
+
+2. **Subclasses `Car` and `Boat`:**
+
+   - Both classes extend the `Vehicle` class and **implement the `move()` method**, providing their own behavior for how the vehicle moves.
+   - Both subclasses can also use the inherited `stop()` method from the `Vehicle` class.
+
+3. **Cannot Instantiate an Abstract Class Directly:**
+
+   - You **cannot create an instance** of the abstract class `Vehicle` because it's incomplete. It serves only as a base class for other classes to extend.
+
+4. **Method Implementation:**
+   - The subclasses `Car` and `Boat` provide their own implementation of the `move()` method, but both can use the `stop()` method from the abstract class.
+
+---
+
+### **Key Points:**
+
+- **Abstract Class**: A class that cannot be instantiated and may have abstract methods that must be implemented by subclasses. It can also have fully implemented methods.
+- **Abstract Method**: A method declared in an abstract class with no body. Subclasses are forced to implement this method.
+
+---
+
+### **Why Use Abstract Classes and Methods?**
+
+1. **Enforce Consistency**: By using abstract methods, you can enforce a certain structure or behavior that all subclasses must follow. In the example above, all vehicles must implement the `move()` method, ensuring that each vehicle type can **move** but in its own way.
+
+2. **Code Reusability**: Abstract classes can provide default behavior that all subclasses can reuse, reducing the need to duplicate code (e.g., the `stop()` method is used by both `Car` and `Boat`).
+
+3. **Design Flexibility**: Abstract classes help in creating flexible designs. For example, you can define a **common interface** for all vehicles without worrying about the specific details of each vehicle type.
+
+---
+
+### **Summary of Abstract Classes and Methods:**
+
+- **Abstract Class**: A class that cannot be instantiated directly and may contain abstract and non-abstract methods.
+- **Abstract Method**: A method with no implementation, declared in an abstract class, that must be implemented by any subclass.
+- **Purpose**: To provide a base class with common functionality and enforce certain methods to be implemented by subclasses, ensuring consistency and reusability in your design.
